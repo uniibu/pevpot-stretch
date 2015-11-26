@@ -1,7 +1,30 @@
 PevPot Stretch
 --------------
 
-A simple utility to stretch a blockhash for the [pevpot lottery](https://www.pevpot.com/provably-fair). Based on openssl
+High performance hash stretch for [pevpot's provably fair lottery](https://www.pevpot.com/provably-fair)!
+
+
+This repository includes both a node library and a stand-alone command line tool.
+
+For the node library just grab with npm:
+
+
+`npm install pevpot-stretch`
+
+and use
+
+```
+var stetch = require('pevpot-stetch');
+stetch(
+  "00000000000000000ef86b27c174df6a412c0ce43eab1d532034555749294137",
+  100000,
+  function(err, data) {
+    console.log('Stretch callback was called with: ', err, data);
+  }
+);
+```
+
+And the simple utility to stretch a blockhash for the [pevpot lottery](https://www.pevpot.com/provably-fair). Based on openssl
 with an iteration counter changed from `int` to `long` to support 64 bit iterations
 
 Compiling
