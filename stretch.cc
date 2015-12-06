@@ -5,6 +5,7 @@
 #include <iomanip>
 #include <sstream>
 
+#include <string.h>
 #include <openssl/hmac.h>
 #include <openssl/evp.h>
 
