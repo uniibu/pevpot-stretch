@@ -32,7 +32,7 @@ Compiling
 
 Linux: `gcc -O3 stretch.c -o stretch -lssl -lcrypto`
 
-OSX: `clang -O3 stretch.c -o stretch -O3 -o verify -g -Wall -I/usr/local/Cellar/openssl/1.0.2d_1/include/ -L/usr/local/Cellar/openssl/1.0.2d_1/lib -lcrypto`
+OSX: `clang -O3 stretch.c -o stretch -O3 -g -Wall -I/usr/local/Cellar/openssl/1.0.2d_1/include/ -L/usr/local/Cellar/openssl/1.0.2d_1/lib -lcrypto`
 
 
 Usage
